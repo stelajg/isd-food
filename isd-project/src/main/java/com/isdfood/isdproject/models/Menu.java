@@ -24,11 +24,12 @@ public class Menu {
     public Integer getPrice() {
         return price;
     }
-    public String getProviderName(){
+
+    public String getProviderName() {
         return provider.getName();
     }
 
-    enum Type{
-        S,M
+    enum Type {
+        S, M
     }
 }

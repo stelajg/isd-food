@@ -8,12 +8,18 @@ import java.util.List;
 
 public interface UserRepository {
     int addUser(User user);
+
     List<User> viewUsers();
+
     void editUser(String userLogin);
+
     void deleteUser(String userLogin);
+
     void changeRole(String userLogin);
+
     void enableUser(String userLogin);
-    default int addUser(String login, String password, String email, String firstName, String lastName, String employmentDate, Role role, String skypeId){
+
+    default int addUser(String login, String password, String email, String firstName, String lastName, String employmentDate, Role role, String skypeId) {
         return addUser(new User(login, password, email, firstName, lastName, employmentDate, role, skypeId));
     }
 }

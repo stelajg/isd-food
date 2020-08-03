@@ -26,11 +26,9 @@ public class User {
         SkypeId = skypeId;
     }
 
-    public void addOrder(Order order){
+    public void addOrder(Order order) {
         orderList.add(order);
     }
-
-
 
 
 }
