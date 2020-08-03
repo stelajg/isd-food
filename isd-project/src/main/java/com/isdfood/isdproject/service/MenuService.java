@@ -1,4 +1,7 @@
 package com.isdfood.isdproject.service;
 
-public class MenuService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class MenuService  {
 }
